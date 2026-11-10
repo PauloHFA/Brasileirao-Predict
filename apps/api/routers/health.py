@@ -3,6 +3,7 @@ from sqlalchemy import text
 from sqlalchemy.orm import Session
 
 from src.database import get_db
+from src.llm_extraction.providers import check_llm_provider_health
 
 router = APIRouter(tags=["Health"])
 
@@ -17,3 +18,7 @@ def readiness_check(db: Session = Depends(get_db)):
         return {"status": "ready", "database": "connected"}
     except Exception as e:
         raise HTTPException(status_code=503, detail=f"Database unreachable: {str(e)}")
+
+@router.get("/api/v1/llm/status")
+def llm_provider_status():
+    return check_llm_provider_health()

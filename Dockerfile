@@ -11,7 +11,8 @@ COPY pyproject.toml README.md ./
 RUN pip install --no-cache-dir .
 
 COPY . .
+RUN chmod +x scripts/entrypoint.sh
 
 EXPOSE 8000
 
-CMD ["uvicorn", "apps.api.main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["./scripts/entrypoint.sh"]
