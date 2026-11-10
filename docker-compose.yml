@@ -1,0 +1,43 @@
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: brpredictor_db
+    restart: always
+    environment:
+      POSTGRES_USER: brpredictor
+      POSTGRES_PASSWORD: brpredictor_secret
+      POSTGRES_DB: brpredictor
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U brpredictor -d brpredictor"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: brpredictor_api
+    restart: always
+    environment:
+      DATABASE_URL: postgresql+psycopg://brpredictor:brpredictor_secret@db:5432/brpredictor
+      LLM_PROVIDER: mock
+      AS_OF_HOURS: 24
+      LOG_LEVEL: INFO
+    ports:
+      - "8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "python -c \"import urllib.request; urllib.request.urlopen('http://localhost:8000/healthz')\""]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+volumes:
+  postgres_data:

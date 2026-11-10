@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-11-10T15:03:45.890235+00:00",
+  "status": "PASS",
+  "test_seasons": [
+    2024
+  ],
+  "matches_audited": 380,
+  "violations_count": 0,
+  "violations": []
+}

@@ -1,0 +1,137 @@
+{
+  "flamengo": {
+    "id": 1,
+    "canonical_name": "Flamengo",
+    "aliases": ["flamengo", "cr flamengo", "c.r. flamengo", "fla", "mengo", "rubro-negro carioca"]
+  },
+  "palmeiras": {
+    "id": 2,
+    "canonical_name": "Palmeiras",
+    "aliases": ["palmeiras", "se palmeiras", "s.e. palmeiras", "pal", "verdao", "alviverde paulista"]
+  },
+  "sao_paulo": {
+    "id": 3,
+    "canonical_name": "São Paulo",
+    "aliases": ["sao paulo", "são paulo", "sao paulo fc", "são paulo fc", "spfc", "tricolor paulista"]
+  },
+  "corinthians": {
+    "id": 4,
+    "canonical_name": "Corinthians",
+    "aliases": ["corinthians", "sc corinthians paulista", "s.c. corinthians paulista", "cor", "timao", "timão"]
+  },
+  "santos": {
+    "id": 5,
+    "canonical_name": "Santos",
+    "aliases": ["santos", "santos fc", "san", "peixe", "alvinegro praiano"]
+  },
+  "gremio": {
+    "id": 6,
+    "canonical_name": "Grêmio",
+    "aliases": ["gremio", "grêmio", "gremio fbpa", "grêmio fbpa", "gre", "tricolor gaucho", "tricolor gaúcho"]
+  },
+  "internacional": {
+    "id": 7,
+    "canonical_name": "Internacional",
+    "aliases": ["internacional", "sc internacional", "s.c. internacional", "inter", "colorado"]
+  },
+  "atletico_mg": {
+    "id": 8,
+    "canonical_name": "Atlético Mineiro",
+    "aliases": ["atletico mineiro", "atlético mineiro", "atletico-mg", "atlético-mg", "cam", "galo"]
+  },
+  "cruzeiro": {
+    "id": 9,
+    "canonical_name": "Cruzeiro",
+    "aliases": ["cruzeiro", "cruzeiro ec", "cru", "raposa", "celeste"]
+  },
+  "fluminense": {
+    "id": 10,
+    "canonical_name": "Fluminense",
+    "aliases": ["fluminense", "fluminense fc", "flu", "tricolor das laranjeiras", "tricolor carioca"]
+  },
+  "vasco": {
+    "id": 11,
+    "canonical_name": "Vasco da Gama",
+    "aliases": ["vasco", "vasco da gama", "cr vasco da gama", "vas", "cruzmaltino", "gigante da colina"]
+  },
+  "botafogo_rj": {
+    "id": 12,
+    "canonical_name": "Botafogo",
+    "aliases": ["botafogo", "botafogo-rj", "botafogo fr", "bot", "glorioso", "alvinegro carioca", "fogao", "fogão"]
+  },
+  "botafogo_sp": {
+    "id": 13,
+    "canonical_name": "Botafogo-SP",
+    "aliases": ["botafogo-sp", "botafogo sp", "botafogo fc sp", "pantera"]
+  },
+  "athletico_pr": {
+    "id": 14,
+    "canonical_name": "Athletico Paranaense",
+    "aliases": ["athletico paranaense", "atletico paranaense", "athletico-pr", "atletico-pr", "cap", "furacao", "furacão"]
+  },
+  "coritiba": {
+    "id": 15,
+    "canonical_name": "Coritiba",
+    "aliases": ["coritiba", "coritiba fbc", "cfc", "coxa"]
+  },
+  "bahia": {
+    "id": 16,
+    "canonical_name": "Bahia",
+    "aliases": ["bahia", "ec bahia", "e.c. bahia", "bah", "esquadrao de aco", "tricolor de aco", "tricolor baiano"]
+  },
+  "vitoria": {
+    "id": 17,
+    "canonical_name": "Vitória",
+    "aliases": ["vitoria", "vitória", "ec vitoria", "e.c. vitória", "vit", "leao da barra", "leão da barra"]
+  },
+  "fortaleza": {
+    "id": 18,
+    "canonical_name": "Fortaleza",
+    "aliases": ["fortaleza", "fortaleza ec", "for", "leao do pici", "leão do pici", "tricolor do pici"]
+  },
+  "ceara": {
+    "id": 19,
+    "canonical_name": "Ceará",
+    "aliases": ["ceara", "ceará", "ceara sc", "cea", "vozao", "vozão"]
+  },
+  "cuiaba": {
+    "id": 20,
+    "canonical_name": "Cuiabá",
+    "aliases": ["cuiaba", "cuiabá", "cuiaba ec", "cui", "dourado"]
+  },
+  "red_bull_bragantino": {
+    "id": 21,
+    "canonical_name": "Red Bull Bragantino",
+    "aliases": ["red bull bragantino", "bragantino", "rb bragantino", "rbb", "massa bruta"]
+  },
+  "america_mg": {
+    "id": 22,
+    "canonical_name": "América Mineiro",
+    "aliases": ["america mineiro", "américa mineiro", "america-mg", "américa-mg", "coelho"]
+  },
+  "america_rn": {
+    "id": 23,
+    "canonical_name": "América de Natal",
+    "aliases": ["america de natal", "américa de natal", "america-rn", "américa-rn", "mecao", "mecão"]
+  },
+  "atletico_go": {
+    "id": 24,
+    "canonical_name": "Atlético Goianiense",
+    "aliases": ["atletico goianiense", "atlético goianiense", "atletico-go", "atlético-go", "dragao", "dragão"]
+  },
+  "goias": {
+    "id": 25,
+    "canonical_name": "Goiás",
+    "aliases": ["goias", "goiás", "goias ec", "goi", "esmeraldino"]
+  },
+  "juventude": {
+    "id": 26,
+    "canonical_name": "Juventude",
+    "aliases": ["juventude", "ec juventude", "juv", "papo"]
+  },
+  "criciuma": {
+    "id": 27,
+    "canonical_name": "Criciúma",
+    "aliases": ["criciuma", "criciúma", "criciuma ec", "cri", "tigre"]
+  }
+}

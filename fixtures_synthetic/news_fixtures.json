@@ -1,0 +1,62 @@
+[
+  {
+    "url": "https://ge.globo.com/futebol/flamengo/noticia/2024/05/18/pedro-sente-lesao-coxa-e-desfalca-flamengo.ghtml",
+    "title": "Pedro sente lesão muscular na coxa e desfalca o Flamengo",
+    "source_name": "ge_globo",
+    "published_at": "2024-05-18T10:00:00Z",
+    "first_seen_at": "2024-05-18T10:05:00Z",
+    "team_slug": "flamengo",
+    "match_id": null,
+    "rights_status": "ALLOWED",
+    "text_content": "O atacante Pedro passou por exames médicos na manhã deste sábado e teve confirmada lesão muscular na coxa direita. O departamento médico do Flamengo informou que o jogador iniciou fisioterapia e está vetado para a próxima rodada do Brasileirão. Trata-se de um titular absoluto e artilheiro da equipe no ano.",
+    "expected_category": "desfalques"
+  },
+  {
+    "url": "https://ge.globo.com/futebol/corinthians/noticia/2024/06/10/torcida-invade-ct-protesto-treinador-demitido.ghtml",
+    "title": "Após novo revés, torcida protesta no CT e diretoria demite treinador",
+    "source_name": "ge_globo",
+    "published_at": "2024-06-10T14:30:00Z",
+    "first_seen_at": "2024-06-10T14:35:00Z",
+    "team_slug": "corinthians",
+    "match_id": null,
+    "rights_status": "ALLOWED",
+    "text_content": "Clima de forte pressão no Parque São Jorge. Dezenas de torcedores organizados foram até o CT protestar contra a má fase da equipe. Diante dos resultados ruins e da ameaça de rebaixamento, a diretoria anunciou oficialmente o desligamento do treinador e de toda a comissão técnica.",
+    "expected_category": "crise"
+  },
+  {
+    "url": "https://uol.com.br/esporte/futebol/palmeiras/2024/08/20/palmeiras-deve-poupar-titulares-brasileirao.htm",
+    "title": "Palmeiras deve poupar time titular no Brasileirão de olho na Libertadores",
+    "source_name": "uol_esporte",
+    "published_at": "2024-08-20T16:00:00Z",
+    "first_seen_at": "2024-08-20T16:10:00Z",
+    "team_slug": "palmeiras",
+    "match_id": null,
+    "rights_status": "ALLOWED",
+    "text_content": "Com foco total no jogo de volta das quartas de final da Copa Libertadores no meio de semana, a comissão técnica do Palmeiras decidiu preservar os atletas titulares mais desgastados no fim de semana. Uma formação predominantemente reserva entrará em campo na rodada do Campeonato Brasileiro.",
+    "expected_category": "rotacao"
+  },
+  {
+    "url": "https://terra.com.br/esportes/sao-paulo/2024/04/25/sao-paulo-faz-treino-tatico-no-morumbris.htm",
+    "title": "São Paulo realiza treino tático no CT da Barra Funda sem novidades",
+    "source_name": "terra_esportes",
+    "published_at": "2024-04-25T11:00:00Z",
+    "first_seen_at": "2024-04-25T11:15:00Z",
+    "team_slug": "sao_paulo",
+    "match_id": null,
+    "rights_status": "ALLOWED",
+    "text_content": "O elenco são-paulino finalizou a preparação para o próximo compromisso do Brasileirão. Em atividade fechada à imprensa, o treinador comandou trabalhos de posicionamento e bola parada. Não foram relatadas novas ausências nem alterações significativas na equipe.",
+    "expected_category": "neutro"
+  },
+  {
+    "url": "https://noticias-ficticias.com/spoiler-pos-jogo-placar.htm",
+    "title": "Flamengo vence o clássico por 2 a 1 com gol no final",
+    "source_name": "noticias_ficticias",
+    "published_at": "2026-05-20T22:00:00Z",
+    "first_seen_at": "2026-05-20T22:05:00Z",
+    "team_slug": "flamengo",
+    "match_id": null,
+    "rights_status": "ALLOWED",
+    "text_content": "Matéria com o resultado da partida após o apito final.",
+    "expected_category": "leakage"
+  }
+]

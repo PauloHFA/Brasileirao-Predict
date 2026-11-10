@@ -1,0 +1,69 @@
+{
+  "timestamp": "2026-11-10T16:05:17.769696+00:00",
+  "status": "PASS",
+  "total_matches": 1520,
+  "total_teams": 27,
+  "seasons": {
+    "2021": {
+      "match_count": 380,
+      "rounds_count": 38,
+      "first_match": "2021-04-15T19:00:00",
+      "last_match": "2021-12-31T23:00:00",
+      "complete": true
+    },
+    "2022": {
+      "match_count": 380,
+      "rounds_count": 38,
+      "first_match": "2022-04-15T19:00:00",
+      "last_match": "2022-12-31T23:00:00",
+      "complete": true
+    },
+    "2023": {
+      "match_count": 380,
+      "rounds_count": 38,
+      "first_match": "2023-04-15T19:00:00",
+      "last_match": "2023-12-31T23:00:00",
+      "complete": true
+    },
+    "2024": {
+      "match_count": 380,
+      "rounds_count": 38,
+      "first_match": "2024-04-15T19:00:00",
+      "last_match": "2024-12-31T23:00:00",
+      "complete": true
+    }
+  },
+  "sources": [
+    {
+      "source_name": "openfootball",
+      "version": "2021",
+      "sha256": "95512d27ad9d744f1ec9aa5bdc76299ad441135de6f7fdbcfde12138c21a90b9",
+      "fetched_at": "2026-11-10T14:55:20.734957"
+    },
+    {
+      "source_name": "openfootball",
+      "version": "2022",
+      "sha256": "3b2f614a21b9f33170f0e97e615f16aaee2ce29636fecd7926a74f4a9efac32d",
+      "fetched_at": "2026-11-10T14:55:20.880542"
+    },
+    {
+      "source_name": "openfootball",
+      "version": "2023",
+      "sha256": "d40f016a59c5193689edfc0eba235bc7013e77a9efbdfdb5eecb8214119ea5bb",
+      "fetched_at": "2026-11-10T14:55:21.021104"
+    },
+    {
+      "source_name": "openfootball",
+      "version": "2024",
+      "sha256": "d93764cb73d935feec32c407296e1a1b71f1276125fbb165b6e42febd947a8c9",
+      "fetched_at": "2026-11-10T14:55:21.171608"
+    }
+  ],
+  "issues": [],
+  "integrity_checks": {
+    "unique_matches": true,
+    "distinct_teams": true,
+    "non_negative_goals": true,
+    "at_least_3_seasons": true
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "config": {
+    "project": "brasileirao-predictor-ai",
+    "seed": 42,
+    "competition": "brasileirao_serie_a",
+    "cutoffs_hours": [
+      24,
+      48
+    ],
+    "default_cutoff_hours": 24,
+    "train_seasons": [
+      2021,
+      2022
+    ],
+    "validation_seasons": [
+      2023
+    ],
+    "test_seasons": [
+      2024
+    ],
+    "models": [
+      "prior",
+      "numeric_lgbm",
+      "news_count_lgbm",
+      "contextual_lgbm",
+      "poisson"
+    ],
+    "primary_metric": "log_loss",
+    "secondary_metrics": [
+      "brier",
+      "ece",
+      "accuracy",
+      "macro_f1"
+    ],
+    "comparison": "paired_on_same_match_ids",
+    "bootstrap": {
+      "group_by": "round_or_week",
+      "samples": 2000,
+      "confidence_level": 0.95
+    },
+    "promotion": {
+      "min_relative_logloss_improvement": 0.02,
+      "require_temporal_consistency": true,
+      "allow_negative_result": true
+    }
+  },
+  "sample_counts": {
+    "train": 760,
+    "val": 380,
+    "test": 380
+  },
+  "metrics": {
+    "B0_prior": {
+      "log_loss": 1.0947,
+      "brier_score": 0.6641,
+      "ece": 0.0435,
+      "accuracy": 0.3947,
+      "macro_f1": 0.1887
+    },
+    "B1_numeric": {
+      "log_loss": 1.0972,
+      "brier_score": 0.6659,
+      "ece": 0.0445,
+      "accuracy": 0.3947,
+      "macro_f1": 0.1887
+    },
+    "B2_news_count": {
+      "log_loss": 1.0972,
+      "brier_score": 0.6659,
+      "ece": 0.0445,
+      "accuracy": 0.3947,
+      "macro_f1": 0.1887
+    },
+    "M1_contextual": {
+      "log_loss": 1.0972,
+      "brier_score": 0.6659,
+      "ece": 0.0445,
+      "accuracy": 0.3947,
+      "macro_f1": 0.1887
+    },
+    "G1_poisson": {
+      "log_loss": 1.0992,
+      "brier_score": 0.6673,
+      "ece": 0.0372,
+      "accuracy": 0.3553,
+      "macro_f1": 0.2731
+    }
+  },
+  "paired_bootstrap": {
+    "mean_delta_log_loss": 0.0,
+    "ci_lower_95": 0.0,
+    "ci_upper_95": 0.0,
+    "statistically_significant": false,
+    "favors": "INCONCLUSIVE"
+  },
+  "promotion_gate": {
+    "decision": "RETAIN_B1_BASELINE",
+    "active_model": "numeric_lgbm",
+    "relative_improvement": 0.0,
+    "threshold_required": 0.02,
+    "meets_loss_target": false,
+    "meets_calibration": true,
+    "ci_supports": true,
+    "explanation": "Null hypothesis not rejected: M1 relative change (0.00%) did not meet the 2.0% threshold. B1 retained as default production model. Negative result registered successfully."
+  }
+}
