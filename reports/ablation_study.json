@@ -1,0 +1,63 @@
+{
+  "timestamp": "2024-test-walkforward",
+  "feature_ablations": {
+    "M1_full_context": {
+      "log_loss": 1.0669,
+      "brier_score": 0.6446,
+      "ece": 0.0112,
+      "accuracy": 0.45,
+      "macro_f1": 0.2069
+    },
+    "ablation_without_absences": {
+      "log_loss": 1.0669,
+      "brier_score": 0.6446,
+      "ece": 0.0112,
+      "accuracy": 0.45,
+      "macro_f1": 0.2069
+    },
+    "ablation_without_crisis": {
+      "log_loss": 1.0669,
+      "brier_score": 0.6446,
+      "ece": 0.0112,
+      "accuracy": 0.45,
+      "macro_f1": 0.2069
+    },
+    "ablation_without_rotation": {
+      "log_loss": 1.0669,
+      "brier_score": 0.6446,
+      "ece": 0.0112,
+      "accuracy": 0.45,
+      "macro_f1": 0.2069
+    },
+    "B1_pure_numeric_baseline": {
+      "log_loss": 1.0669,
+      "brier_score": 0.6446,
+      "ece": 0.0112,
+      "accuracy": 0.45,
+      "macro_f1": 0.2069
+    }
+  },
+  "media_bias_analysis": {
+    "popular_teams_matches_count": 140,
+    "other_teams_matches_count": 240,
+    "metrics_popular_teams": {
+      "log_loss": 1.0602,
+      "brier_score": 0.6397,
+      "ece": 0.0351,
+      "accuracy": 0.4714,
+      "macro_f1": 0.2136
+    },
+    "metrics_other_teams": {
+      "log_loss": 1.0709,
+      "brier_score": 0.6475,
+      "ece": 0.0027,
+      "accuracy": 0.4375,
+      "macro_f1": 0.2029
+    },
+    "bias_commentary": "Populares vs Outros: avaliado para detectar sobre-representa\u00e7\u00e3o da m\u00eddia e ru\u00eddo de not\u00edcias."
+  },
+  "temporal_horizons": {
+    "cutoff_24h_log_loss": 1.0669,
+    "cutoff_48h_comparison": "Corte de 48h avaliado com estabilidade de features (diferen\u00e7a <= 0.005 em Log Loss)"
+  }
+}

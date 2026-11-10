@@ -1,4 +1,4 @@
-.PHONY: help up down migrate ingest-matches validate-data build-features extract-news train-baseline run-experiment evaluate test lint
+.PHONY: help up down migrate ingest-matches validate-data build-features extract-news train-baseline run-experiment run-ablation rss-collect evaluate test lint
 
 PYTHON ?= python
 
@@ -11,8 +11,10 @@ help:
 	@echo "  make validate-data                    Valida integridade e temporalidade dos dados"
 	@echo "  make build-features AS_OF_HOURS=24    Gera snapshots tabulares pre-match"
 	@echo "  make extract-news                     Executa extração estruturada de notícias via LLM"
+	@echo "  make rss-collect                      Executa coleta contínua de notícias via RSS"
 	@echo "  make train-baseline                   Treina modelos baselines B0, B1 e G1 Poisson"
 	@echo "  make run-experiment CONFIG=...        Executa experimento completo com M1 e ablações"
+	@echo "  make run-ablation                     Executa estudo completo de ablações (Seção 14.2)"
 	@echo "  make evaluate                         Avalia métricas fora da amostra e gera relatório"
 	@echo "  make test                             Executa suíte de testes automatizados"
 	@echo "  make lint                             Executa ruff linter e checagem de tipos"
@@ -38,11 +40,17 @@ build-features:
 extract-news:
 	$(PYTHON) -m src.llm_extraction.extractor
 
+rss-collect:
+	$(PYTHON) -m src.ingestion.rss_collector
+
 train-baseline:
 	$(PYTHON) -m src.models.train_baseline
 
 run-experiment:
 	$(PYTHON) -m src.evaluation.run_experiment --config $(or $(CONFIG),configs/experiment_v1.yaml)
+
+run-ablation:
+	$(PYTHON) -m src.evaluation.ablation
 
 evaluate:
 	$(PYTHON) -m src.evaluation.evaluate_models
